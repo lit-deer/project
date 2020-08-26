@@ -1,0 +1,524 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--------以下是作業程式碼---------*/
+
+.wrap{
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 30px 0 60px 0;
+    font-family: Microsoft JhengHei;
+}
+img{
+    display: block;
+}
+
+
+/*header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.hanIcon{
+    display: none;
+}
+.logo{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+    display: block;
+    width: 220px;
+    height: 40px;
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li a{
+    color: #3F5D45;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+.menu .menuIcon{
+    margin-right: 60px;
+}
+
+/*banner*/
+.banner{
+    margin-bottom: 60px;
+}
+
+/*---main---*/
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+/*slide bar*/
+.slide-bar li{
+    width: 300px;
+    text-align: center;
+}
+.slide-bar li h3,.slide-bar li a{
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: bold;
+    border: 1px solid #EAF0ED;
+    text-decoration: none;
+}
+.slide-bar li h3{
+    color: #EAF0ED;
+    background: #3F5D45;
+}
+.slide-bar li a{ 
+    color: #3F5D45;
+    background: #ffffff;
+    
+}
+.slide-bar li a:hover{
+    background: #EAF0ED;
+}
+
+/*product*/
+.product{
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product li{
+    width: 300px;
+    color: #3F5D45;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.special{
+    color: #EAF0ED;
+    background: #3F5D45;
+    font-size: 16px;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    padding: 12px 10px 15px 10px;
+
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+.like{
+    position: absolute;
+    right: 22px;
+    top: 19px;
+}
+
+.product-info{
+    display: flex;
+    font-size: 20px;
+    line-height: 28px;
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+}
+
+.product-name{
+    padding: 14px 33px;
+    border-right: 1px solid #EAF0ED;
+}
+.product-price{
+    padding: 14px 20px 14px 25px;
+    font-weight: bold;
+}
+
+.add-cart{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #3F5D45;
+    background: #EAF0ED;
+    padding: 19px 60px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.add-cart:hover{
+    color: #EAF0ED;
+    background: #3F5D45;
+}
+
+/*change page*/
+
+.change-page{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.change-page ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.page, .page-arrow{
+    display: block;
+    border: 1px solid #EAF0ED;
+    text-align: center;
+    text-decoration: none;
+}
+
+.page-arrow{
+    padding: 16.2px 17px;
+}
+
+.page{
+    color: #3F5D45;
+    font-size: 20px;
+    padding: 19px 23.2px;
+}
+.page:hover{
+    color: #EAF0ED;
+    background: #3F5D45;
+}
+
+
+/*---footer---*/
+.footer{
+    font-family: Microsoft JhengHei;
+}
+
+/*subscribe*/
+.subscribe{
+    background-color: #3F5D45;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+.notify{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notify img{
+    margin-right: 20px;
+}
+.notify p{
+    color: #EAF0ED;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.email{
+    display: flex;
+    justify-content: center;
+}
+.email .mailIcon{
+    display: block;
+    padding: 16px 276px 16px 20px;
+    background: #EAF0ED;
+}
+.email .arrowIcon{
+    display: block;
+    background: #FFE180;
+    padding: 16px 20px;
+}
+
+/*info*/
+.info{
+    background-color: #EAF0ED;
+    color: #3F5D45;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-content{
+    padding: 39px 0 30px 0;
+}
+
+.info-sweetaste{
+    margin-bottom: 115.5px;
+}
+
+.info-contact{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.info-socialIcon{
+    display: flex;
+}
+.info-socialIcon .Line-icon{
+    margin-right: 8px;
+}
+
+/*copyright*/
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: "Times New Roman";
+    padding: 30px 0;
+}
+
+.goodDay{
+    writing-mode: vertical-lr;
+    font-size: 23px;
+    line-height: 40px;
+    text-indent: 10px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-bottom: 46px;
+}
+
+/*--------響應式---------*/
+/*---iPad---*/
+@media(max-width: 992px){
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .wrap{
+        padding: 30px 0;
+        max-width: 85%;
+    }
+
+    /*header*/
+    .header{
+        justify-content: space-around;
+    }
+    
+    .menuIcon{
+        display: none;
+    }
+    
+    .hanIcon, .cartIcon{
+        display: block;
+    }
+
+    
+    .header .logo{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-sm-dark.svg);
+    }
+
+    /*banner*/
+    .banner{
+        margin-bottom: 0;
+    }
+
+    /*main*/
+    .slide-bar{
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .slide-bar li{
+        width: 100%;
+    }
+    .slide-bar .barType{
+        width: 50%;
+    }
+
+    .product{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .change-page{
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    /*footer*/
+    .subscribe{
+        flex-direction: column;
+    }
+    .notify{
+        margin-bottom: 30px;
+    }
+    .email{
+        width: 100%;
+    }
+    .email .mailIcon{
+        padding: 16px 207px 16px 20px;
+    }
+
+    .info{
+        flex-direction: column;
+        justify-content: left;
+        padding-left: 30px;
+    }
+    .info-content{
+        padding-top: 39px;
+        padding-bottom: 23px;
+    }
+    .info-sweetaste{
+        margin-bottom: 39.5px;
+    }
+    .info-contact{
+        margin-bottom: 37px;
+    }
+    .copyright{
+        align-items: flex-start;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .copyright .goodDay{
+        display: none;
+    }
+    
+}
+
+
+/*---手機---*/
+@media(max-width: 767px){
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .wrap{
+        max-width: 767px;
+        padding: 30px 0;
+    }
+
+    /*header*/
+    .header{
+        justify-content: space-around;
+    }
+    
+    .menuIcon{
+        display: none;
+    }
+    
+    .hanIcon, .cartIcon{
+        display: block;
+    }
+    .header .logo{
+        width: 114px;
+        height: 18px;
+    }
+
+    /*banner*/
+    .banner{
+        margin-bottom: 0;
+    }
+
+    /*main*/
+    .slide-bar{
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .slide-bar .barType{
+        width: 100%;
+    }
+
+    .product{
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .change-page{
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    /*footer*/
+    .subscribe{
+        flex-direction: column;
+    }
+    .notify{
+        margin-bottom: 30px;
+    }
+    .email{
+        width: 100%;
+    }
+    .email .mailIcon{
+        padding: 16px 207px 16px 20px;
+    }
+
+    .info{
+        flex-direction: column;
+        justify-content: left;
+        padding-left: 30px;
+    }
+    .info-content{
+        padding-top: 39px;
+        padding-bottom: 23px;
+    }
+    .info-sweetaste{
+        margin-bottom: 39.5px;
+    }
+    .info-contact{
+        margin-bottom: 37px;
+    }
+    .copyright{
+        align-items: flex-start;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .copyright .goodDay{
+        display: none;
+    }
+    
+}

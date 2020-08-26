@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--------以下是作業程式碼---------*/
+.wrap{
+    margin: 0 auto;
+    width: 940px;
+    padding: 30px 0 60px 0;
+    font-family: Microsoft JhengHei;
+}
+img{
+    display: block;
+}
+
+/*header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.logo{
+    display: block;
+    width: 220px;
+}
+.menu{
+    width: 319px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li a{
+    color: #3F5D45;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+/*banner*/
+.banner{
+    margin-bottom: 60px;
+}
+
+/*main*/
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/*slide bar*/
+.slide-bar li{
+    width: 300px;
+    text-align: center;
+}
+.slide-bar li h3,.slide-bar li a{
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: bold;
+    border: 1px solid #EAF0ED;
+    text-decoration: none;
+}
+.slide-bar li h3{
+    color: #EAF0ED;
+    background: #3F5D45;
+}
+.slide-bar li a{ 
+    color: #3F5D45;
+    background: #ffffff;
+    
+}
+.slide-bar li a:hover{
+    background: #EAF0ED;
+}
+
+/*product*/
+.product{
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product li{
+    width: 300px;
+    color: #3F5D45;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.special{
+    color: #EAF0ED;
+    background: #3F5D45;
+    font-size: 16px;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    padding: 12px 10px 15px 10px;
+
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+.like{
+    position: absolute;
+    right: 22px;
+    top: 19px;
+}
+
+.product-info{
+    display: flex;
+    font-size: 20px;
+    line-height: 28px;
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+}
+
+.product-name{
+    padding: 14px 33px;
+    border-right: 1px solid #EAF0ED;
+}
+.product-price{
+    padding: 14px 20px 14px 25px;
+    font-weight: bold;
+}
+
+.add-cart{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #3F5D45;
+    background: #EAF0ED;
+    padding: 19px 60px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.add-cart:hover{
+    color: #EAF0ED;
+    background: #3F5D45;
+}
+
+/*change page*/
+
+.change-page{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.change-page ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.page, .page-arrow{
+    display: block;
+    border: 1px solid #EAF0ED;
+    text-align: center;
+    text-decoration: none;
+}
+
+.page-arrow{
+    padding: 16.2px 17px;
+}
+
+.page{
+    color: #3F5D45;
+    font-size: 20px;
+    padding: 19px 23.2px;
+}
+.page:hover{
+    color: #EAF0ED;
+    background: #3F5D45;
+}
