@@ -1,0 +1,140 @@
+/*---footer---*/
+.footer{
+    font-family: Microsoft JhengHei;
+}
+
+/*subscribe*/
+.subscribe{
+    background-color: $green-dark;
+    &-inner{
+        max-width: 780px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+        @include pad(){
+            flex-direction: column;
+        }
+    }
+}
+
+.notify{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include pad(){
+        margin-bottom: 30px;
+    }
+    
+    img{
+        margin-right: 20px;
+    }
+    p{
+        color: $green-light;
+        font-size: $font-l;
+        line-height: 29px;
+        text-align: center;
+    }
+}
+
+
+.email{
+    display: flex;
+    justify-content: center;
+    @include pad(){
+        width: 100%;
+    }
+
+    .mailIcon{
+        display: block;
+        padding: 16px 276px 16px 20px;
+        background: $green-light;
+        @include pad(){
+            padding: 16px 207px 16px 20px;
+        }
+    }
+
+    .arrowIcon{
+        display: block;
+        background: $yellow;
+        padding: 16px 20px;
+    }
+}
+
+
+/*info*/
+.info{
+    background-color: $green-light;
+    color: $green-dark;
+
+    &-inner{
+        max-width: 780px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        @include pad(){
+            flex-direction: column;
+            justify-content: left;
+            padding-left: 30px;
+        }
+    }
+    
+    &-content{
+        padding: 39px 0 30px 0;
+        @include pad(){
+            padding-top: 39px;
+            padding-bottom: 23px;
+        }
+    }
+    
+    &-sweetaste{
+        margin-bottom: 115.5px;
+        @include pad(){
+            margin-bottom: 39.5px;
+        }
+    }
+    
+    &-contact{
+        font-size: $font-s;
+        line-height: 24px;
+        margin-bottom: 30px;
+        @include pad(){
+            margin-bottom: 37px;
+        }
+    }
+    
+    &-socialIcon{
+        display: flex;
+        .Line-icon{
+            margin-right: 8px;
+        }
+    }
+}
+
+
+/*copyright*/
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: "Times New Roman";
+    padding: 30px 0;
+    @include pad(){
+        align-items: flex-start;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+}
+
+.goodDay{
+    writing-mode: vertical-lr;
+    font-size: 23px;
+    line-height: 40px;
+    text-indent: 10px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-bottom: 46px;
+    @include pad(){
+        display: none;
+    }
+}

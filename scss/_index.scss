@@ -1,0 +1,179 @@
+/*banner*/
+.banner{
+    margin-bottom: 60px;
+    @include pad(){
+        margin-bottom: 0;
+    }
+}
+
+/*---main---*/
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+/*slide bar*/
+.slide-bar{
+    width: 30%;
+    @include pad(){
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    li{
+        text-align: center;
+        @include pad(){
+            width: 100%;
+        }
+    }
+    h3,a{
+        display: block;
+        font-size: $font-l;
+        line-height: 33px;
+        font-weight: bold;
+        border: 1px solid $green-light;
+        text-decoration: none;
+    }
+    h3{
+        color: $green-light;
+        background: $green-dark;
+        padding: 16px 64px;
+    }
+    a{ 
+        color: $green-dark;
+        background: #ffffff;
+        padding: 16px 64px;
+    }
+    a:hover{
+        background: $green-light;
+    }
+    .barType{
+        @include pad(){
+            width: 50%;
+        }
+        @include phone(){
+            width: 100%;
+        }
+    }
+}
+
+
+/*product*/
+.product{
+    width: 66.5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include pad(){
+        width: 100%;
+        justify-content: space-between;
+    }
+    @include phone(){
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    li{
+        color: $green-dark;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    &-info{
+        display: flex;
+        font-size: $font-m;
+        line-height: 28px;
+        border-left: 1px solid $green-light;
+        border-right: 1px solid $green-light;
+    }
+    
+    &-name{
+        padding: 14px 33px;
+        border-right: 1px solid $green-light;
+    }
+    &-price{
+        padding: 14px 20px 14px 25px;
+        font-weight: bold;
+    }
+}
+
+
+
+.special{
+    color: $green-light;
+    background: $green-dark;
+    font-size: $font-s;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    padding: 12px 10px 15px 10px;
+
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+.like{
+    position: absolute;
+    right: 22px;
+    top: 19px;
+}
+
+
+
+.add-cart{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: $green-dark;
+    background: $green-light;
+    padding: 19px 60px;
+    font-size: $font-l;
+    text-align: center;
+}
+
+.add-cart:hover{
+    color: $green-light;
+    background: $green-dark;
+}
+
+/*change page*/
+
+.change-page{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 60px;
+    @include pad(){
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+.page, .page-arrow{
+    display: block;
+    border: 1px solid $green-light;
+    text-align: center;
+    text-decoration: none;
+}
+
+.page-arrow{
+    padding: 16.2px 17px;
+}
+
+.page{
+    color: $green-dark;
+    font-size: $font-m;
+    padding: 19px 23.2px;
+}
+.page:hover{
+    color: $green-light;
+    background: $green-dark;
+}

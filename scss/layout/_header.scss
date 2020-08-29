@@ -1,0 +1,67 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    @include pad(){
+        justify-content: space-between;
+    }
+    @include phone(){
+        justify-content: space-around;
+    }
+}
+.menuIcon{
+    @include pad(){
+        display: none;
+    }
+}
+
+.hanIcon{
+    display: none;
+    @include pad(){
+        display: block;
+    }
+}
+.cartIcon{
+    @include pad(){
+        display: block;
+    }
+}
+
+.logo{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+    display: block;
+    width: 220px;
+    height: 40px;
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    @include pad(){
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-sm-dark.svg);
+    }
+    @include phone(){
+        width: 114px;
+        height: 18px;
+    }
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li a{
+        color: $green-dark;
+        font-size: $font-s;
+        font-weight: bold;
+        text-decoration: none;
+        padding-top: 10px;
+        padding-bottom: 8px;
+    }
+
+    .menuIcon{
+        margin-right: 60px;
+    }
+}
+
+
